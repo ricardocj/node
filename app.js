@@ -8,8 +8,8 @@ app.get('/',(req,res)=> {
     res.send("Hello Ric");
 });
 
-
-app.listen(3000,()=> {
+const port = process.env.por || 3000;
+app.listen(port,()=> {
 console.log("Alv !!!");
 
 });
